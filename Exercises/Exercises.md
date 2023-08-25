@@ -18,7 +18,7 @@ In a DNA string you can have four different nucleotides: `A`, `C`, `T` and `G`. 
 
 
 ## 4. Parse a corrupted file (⭐️⭐️)
-There is a text file (*corrupted_mat.txt* in the Data folder) that is a matrix where each row in the matrix is a row in the file and the columns in the matrix are separated by  `\t `. The matrix should only have numbers, but, because of some internal errors, the matrix has been corrupted and some of the lines contain words. Write a *function* that:
+There is a text file (*corrupted_mat.txt* in the Data folder) that is a matrix where each row in the matrix is a row in the file and the columns in the matrix are separated by  `\n `. The matrix should only have numbers, but, because of some internal errors, the matrix has been corrupted and some of the lines contain words. Write a *function* that:
 1. Import the file 
 2. Excludes the rows with words
 3. Returns the fixed matrix as a numpy array
@@ -123,7 +123,7 @@ We have collected behavioural and cognitive data from 100 people as part of a st
     - If you see any outliers in the boxplot, use the `rank_inverse_transform` function explained in the lectures to remove those outliers.
     - Compare the `mean` and `median` of the cognitive scores values before and after the `rank_inverse_transform`. What do you notice?
     - Obtain the overall counts of the demographics: how many people do you have for each `sex`, `ethnicity`, `occupation`? Try to represent it using a pie chart and/or a bar chart. 
-6. The `words memory` task is a language based task, so we would expect partcipants from the UK to perform better, or at least different, compared to participants from other non-english speaking countries. To verify this, we can run a **t-test**. Which t-test is the most appropriate? Check the *decision tree*.
+6. The `words definition` task is a language based task, so we would expect partcipants from the UK to perform better, or at least different, compared to participants from other non-english speaking countries. To verify this, we can run a **t-test**. Which t-test is the most appropriate? Check the *decision tree*.
 
     **IMPORTANT #1**: in order to be able to run a t-test, you need to check if the data are normally distributed. To do this, you can use of the **normality** tests explained in the stats material.
 
